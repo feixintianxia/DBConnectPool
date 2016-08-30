@@ -24,7 +24,7 @@ class MutexLock : private noncopyable
 		}
 		~MutexLock()
 		{
-			assert(0 == pthread_mutex_destory(&mutex_));
+			assert(0 == pthread_mutex_destroy(&mutex_));
 		}
 
 		void lock()
